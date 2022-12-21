@@ -1,11 +1,7 @@
 #!/bin/bash
-scp moibit@devapi.moinet.io:/home/moibit/datanode.refactor ./
 set -e
 
 datanode_install() {
-
-sudo mkdir /bin/config
-sudo mv mobdataconfig.yml /bin/config
 
 #installing nodejs
 curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
