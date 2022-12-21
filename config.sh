@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-datanode_install() {
+install() {
 
 #installing nodejs
 curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
@@ -60,4 +60,4 @@ sudo npm i pm2 -g
     fi
 
 }
-datanode_install
+install
